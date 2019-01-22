@@ -1,0 +1,156 @@
+    1  whoami
+    2  w
+    3  echo hello
+    4  man ls
+    5  top
+    6  ps-fu $USER
+    7  ps -fu $USER
+    8  bc
+    9  echo $PATH
+   10  tree
+   11  ls /rsgrps/bh_class/bin
+   12  Path=
+   13  wc --help
+   14  cp --help
+   15  cat > foo
+   16  echo $PATH
+   17  cd /rsgrps/bh_class
+   18  ls
+   19  mkdir shelbeezy
+   20  ls
+   21  cd
+   22  cd .ssh
+   23  cat id_rsa.pub
+   24  ~/.ssh/authorized_keys
+   25  chmod 600 authorized_keys
+   26  cd ~/.ssh
+   27  ls
+   28  authorized_keys
+   29  ~/.ssh/authorized_keys
+   30  cat id_rsa.pub
+   31  cd
+   32  .ssh
+   33  cd .ssh
+   34  ~/.ssh
+   35  ls
+   36  id_rsa.pub
+   37  cd
+   38  ~/.ssh/id_rsa.pub
+   39  ssh-keygen
+   40  sssh-keygen
+   41  ssh-keygen
+   42  ls
+   43  ls ~/.ssh
+   44  ~/.ssh/id_rsa.pub
+   45  ls ~/.ssh
+   46  cat ~/.ssh/id_rsa.pub
+   47  cd /rsgrps/bh_class/shelbeezy
+   48  git clone git@github.com:shelbynelson/biosys-analytics.git
+   49  git --version
+   50  git remote add upstream https://github.com/hurwitzlab/biosys-analytics.git
+   51  cd biosys-analytics
+   52  git remote add upstream https://github.com/hurwitzlab/biosys-analytics.git
+   53  git pull upstream master
+   54  git push
+   55  echo hello > hello.txt
+   56  git add hello.txt
+   57  commit -m 'added hello' hello.txt
+   58  git commit -m 'added hello' hello.txt
+   59  git push
+   60  mkdir files
+   61  ls
+   62  cat files
+   63  files
+   64  cat ~/biosys-analytics/files
+   65  touch
+   66  touch --help
+   67  > answers.txt
+   68  ls
+   69  mv --help
+   70  cd files
+   71  > answers.txt
+   72  ls
+   73  cd ls
+   74  cd
+   75  ls
+   76  cd /rsgrps/bh_class/shelbeezy
+   77  cd biosys-analytics
+   78  ls
+   79  cat files
+   80  cd files
+   81  ls
+   82  cat answers.txt
+   83  cd biosys-analytics
+   84  cd /rsgrps/bh_class/shelbeezy/biosys-analytics
+   85  git add files
+   86  git commit -m 'all done' files
+   87  git push
+   88  cd files
+   89  mkdir files
+   90  ls
+   91  cd files
+   92  wget --help
+   93  wget https://www.constitution.org/usdeclar.txt
+   94  cat files
+   95  ls
+   96  wget https://www.usconstitution.net/const.txt
+   97  ls
+   98  wget -O scarlet.txt https://www.gutenberg.org/files/25344/25344-0.txt
+   99  ls
+  100  wc --help
+  101  wc -l files
+  102  wc -l const.txt
+  103  wc -l files*
+  104  wc -l const.txt*
+  105  cat const.txt
+  106  xargs wc -l
+  107  ls
+  108  wc -l const.txt
+  109  wc -l scarlet.txt
+  110  wc -l usdeclar.txt
+  111  find --help
+  112  files -size +50k
+  113  -size +50k
+  114  find -size +50k
+  115  file --help
+  116  file const.txt
+  117  md5sum --help
+  118  md5sum -c files
+  119  cd biosys-analytics
+  120  cd shelbeezy
+  121  cd
+  122  ls
+  123  cat foo
+  124  cd /rsgrps/bh_class/shelbeezy/biosys-analytics
+  125  md5sum -c files
+  126  md5sum files
+  127  cd files
+  128  ls
+  129  cd files
+  130  ls
+  131  md5sum const.txt
+  132  ls | xargs md5sum
+  133  ls |xargs wc -l
+  134  df --help
+  135  df -h
+  136  df -h -k
+  137  grep --help
+  138  grep -o -i judge const.txt | wc -l
+  139  ls | xargs grep -o -i judge | wc -l
+  140  grep -o -i judge scarlet.txt | wc -l
+  141  ls
+  142  grep -o -i judge usdeclar.txt | wc -l
+  143  ls | xargs grep -o -i -l  human
+  144  grep -o -i scarlet scarlet.txt | wc -w
+  145  head --help
+  146  ls
+  147  ls | xargs head -15 >> foo
+  148  ls
+  149  cat foo
+  150  wc -l foo
+  151  wc -l
+  152  foo wc -l
+  153  ls
+  154  rm foo
+  155  ls
+  156  history > cmds

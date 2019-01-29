@@ -1,13 +1,14 @@
 #!/bin/bash
-FILE=${1:-'sonnet-29.txt'}
+FILE=$1
 
 if [[ $# -eq 0 ]]; then
 	echo "Usage: cat-n.sh FILE"
 	exit 1
 fi
 
-if [[ ! -f "$ARG" ]]; then
-	echo "$ARG is not a file"
+if [[ ! -f $FILE ]]; then
+	echo "$FILE is not a file"
+	exit 1
 fi
 
 i=0

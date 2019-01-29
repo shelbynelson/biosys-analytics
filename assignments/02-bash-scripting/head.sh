@@ -20,7 +20,7 @@ fi
 
 while read -r LINE; do
 	i=$((i+1))
-	echo $i "$LINE"
+	echo "$LINE"
 	if [[ $i -eq $NUMLINES ]]; then
 		break
 	fi

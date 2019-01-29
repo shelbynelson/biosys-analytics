@@ -6,7 +6,7 @@ if [[ $# -eq 0 ]]; then
 	exit 1
 fi
 
-if [[ -f "$ARG" ]]; then
+if [[ ! -f "$ARG" ]]; then
 	echo "$ARG is not a file"
 fi
 

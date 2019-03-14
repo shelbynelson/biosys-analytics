@@ -67,11 +67,26 @@ def main():
     if not os.path.isfile(anno_file):
         die('"{}" is not a file'.format(anno_file))
    
+    lookup={}
     with open(anno_file) as csvfile:
         reader = csv.DictReader(csvfile, delimiter=',')
+        for row in reader:
+           lookup[row['centroid']]=row
+    
+    out_f = open(out_file, 'wt') if out_file else sys.stdout
+    out_f.write('\t'.join(['seq_id', 'pident', 'genus', 'species']) +'\n')
     
     with open(main_file) as csvfile:
-        reader = csv.DictReader(csvfile, delimiter=',', fieldnames=('qaccver', 'saccver', 'piednt', 'length', 'mismatch', 'gapopen', 'qstart', 'qend', 'sstart', 'send', 'evalue', 'bitscore'))
+        reader = csv.DictReader(csvfile, delimiter='\t', fieldnames=('qaccver', 'saccver', 'piednt', 'length', 'mismatch', 'gapopen', 'qstart', 'qend', 'sstart', 'send', 'evalue', 'bitscore'))
+        for row in reader:
+           seq_id = row['sseqid']
+           if seq_id not in lookup:
+              warn('Cannot find seq "{}" in lookup'.format(seq_id))
+              continue
+
+
+
+
 # --------------------------------------------------
 if __name__ == '__main__':
     main()

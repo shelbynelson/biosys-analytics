@@ -51,7 +51,7 @@ def main():
     
     if not seed == None:
        random.seed(seed)
-    deck = list(product(suit,face_val))
+    deck = sorted(product(suit,face_val))
     random.shuffle(deck)
     
     p1_score = 0
